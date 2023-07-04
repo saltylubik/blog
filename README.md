@@ -1,2 +1,2 @@
 # blog
-Codes and stuff made in R/Python by me
+Playground for web development plus python and R

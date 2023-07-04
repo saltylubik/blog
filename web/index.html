@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body style="padding-bottom: 1000px;">
   <h1>My first web</h1>
 
   <p>My first paragraph</p>
@@ -51,6 +51,58 @@
   <p class="apple-text">
     Shop early for the best selection of holiday favourites. <span class="inline-text">Shop now &#62;</span>
   </p>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;">
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2 <p>text</p></div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;">
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2 <p>text</p></div>
+    <div style="background-color: lightgreen;">div3</div>
+    <div style="background-color: rgb(255, 255, 0);">div4</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr;">
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;">
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2</div>
+    <div style="background-color: lightgreen;">div3</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    height: 200px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;">
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2</div>
+    <div style="background-color: lightgreen;">div3</div>
+    <div style="background-color: lightgreen;">div3</div>
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2</div>
+  </div>
+
+  
 </body>
 </html>
 

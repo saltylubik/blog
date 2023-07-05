@@ -1,2 +1,2 @@
 # blog
-Playground for web development plus python and R
+Playground for web development

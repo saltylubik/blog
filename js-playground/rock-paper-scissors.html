@@ -8,16 +8,51 @@
     <button id="rock">Rock</button>
     <button id="paper">Paper</button>
     <button id="scissors">Scissors</button>
+    <div id="result" style="
+        margin-top: 10px;
+        font-family: sans-serif;
+    "></div>
 
     <script>
+        const objekty = ["Rock", "Paper", "Scissors"];
+        let computerChoice;
+        const winFun = function(computerChoice, move){
+            computerChoice = objekty[Math.floor(Math.random() * objekty.length)];
+            if (computerChoice == move) {
+                /* ----------------------------------------------------*/
+                document.getElementById("result").innerHTML = 
+                `Computer picked ${computerChoice}. Its a tie!`;
+            } 
+            
+            else if (move == "Rock" && computerChoice == "Paper"|| 
+                    move == "Paper" && computerChoice == "Scissors" || 
+                    move == "Scissors" && computerChoice == "Rock") {
+                /* ----------------------------------------------------*/
+                document.getElementById("result").innerHTML = 
+                `Computer picked ${computerChoice}. You lose!`;
+            } 
+            
+            else if (move == "Rock" || computerChoice == "Scissors" ||
+                    move == "Paper" && computerChoice == "Rock" ||
+                    move == "Scissors" && computerChoice == "Paper") {
+                    /* ----------------------------------------------------*/
+                document.getElementById("result").innerHTML = 
+                `Computer picked ${computerChoice}. You win!`;
+            }
+        };
+
         document.getElementById("rock").onclick = function() {
-
-
+            let rock = document.getElementById("rock").innerHTML;
+            winFun(computerChoice, rock);
         };
         document.getElementById("paper").onclick = function() {
-        
+            let paper = document.getElementById("paper").innerHTML;
+            winFun(computerChoice, paper);
         };
-        
+        document.getElementById("scissors").onclick = function() {
+            let scissors = document.getElementById("scissors").innerHTML;
+            winFun(computerChoice, scissors);
+        };
         
     </script>
 </body>
